@@ -24,7 +24,7 @@ public class NCGRViewer : Form
         };
 
         this.Controls.Add(pictureBox);
-        LoadNCGR("test.bin");
+        LoadNCGR("d2_ObjKeepData.bin");
     }
 
     private void LoadNCGR(string filePath)
@@ -46,7 +46,7 @@ public class NCGRViewer : Form
         int TILE_SIZE = 8;
         int XTILES_PER_ROW = 5;
 
-        int numBlocks = 1;
+        int numBlocks = 3; //タイル数
 
         int YTILES_PER_ROW = numBlocks * 5;
         int TILE_COUNT = XTILES_PER_ROW * YTILES_PER_ROW; // タイル総数
@@ -104,3 +104,4 @@ public class NCGRViewer : Form
         Application.Run(new NCGRViewer());
     }
 }
+
